@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W3Schools Clone</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+body{
+    background:#f1f1f1;
+}
+/* HEADER */
+.header{
+    background:white;
+    border-bottom:1px solid #ccc;
+}
+/* TOP HEADER */
+.top-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    flex-wrap:wrap;
+}
+/* LEFT SIDE */
+.left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#04AA6D;
+}
+.menu{
+    display:flex;
+    gap:15px;
+}
+.menu a{
+    text-decoration:none;
+    color:black;
+    padding:8px;
+}
+.menu a:hover{
+    background:#04AA6D;
+    color:white;
+}
+/* RIGHT SIDE */
+.right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.search{
+    border:1px solid #ccc;
+    border-radius:20px;
+    padding:5px 10px;
+}
+.search input{
+    border:none;
+    outline:none;
+}
+.btn{
+    background:#04AA6D;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+}
+/* COURSE BAR */
+.course-bar{
+    background:#282A35;
+    overflow:auto;
+    white-space:nowrap;
+}
+.course-bar a{
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    padding:12px 15px;
+}
+.course-bar a:hover{
+    background:#04AA6D;
+}
+.active{
+    background:#04AA6D;
+}
+/* TABLE */
+.table-box{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+table th{
+    background:#04AA6D;
+    color:white;
+    padding:12px;
+}
+table td{
+    padding:10px;
+    border:1px solid #ccc;
+}
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+/* RESPONSIVE */
+@media(max-width:900px){
+.menu{
+    display:none;
+}
+.search{
+  display:none;
+}
+.top-header{
+    flex-direction:column;
+    gap:10px;
+}
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<div class="header">
+    <div class="top-header">
+        <div class="left">
+            <div class="logo">W3Schools</div>
+            <div class="menu">
+                <a href="#">Tutorials ▼</a>
+                <a href="#">Exercises ▼</a>
+                <a href="#">Certificates ▼</a>
+                <a href="#">Services ▼</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search">
+                🔍 <input type="text" placeholder="Search">
+            </div>
+            <button class="btn">Log in</button>
+        </div>
+    </div>
+    <!-- COURSE BAR -->
+    <div class="course-bar">
+        <a href="#" class="active">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">Python</a>
+        <a href="#">SQL</a>
+        <a href="#">Java</a>
+    </div>
+</div>
+<!-- TABLE -->
+<div class="table-box">
+    <h2 align="center">Popular Courses</h2>
+    <br>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Fees</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>1 Month</td>
+            <td>₹1000</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>1 Month</td>
+            <td>₹1200</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>2 Months</td>
+            <td>₹2000</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>3 Months</td>
+            <td>₹3000</td>
+        </tr>
+    </table>
+</div>
+</body>
+
+</html>
